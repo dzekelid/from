@@ -20,11 +20,44 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-machine-learning/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS Machine Learning API - Create Data Source From R D S
+  x-api-slug: actioncreatedatasourcefromrds-get
+  description: Creates a DataSource object from an.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Analytics_AmazonMachineLearning.png
+  humanURL: https://aws.amazon.com/machine-learning/
+  baseURL: :///
+  tags: Amazon Web Services, Machine Learning, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-machine-learning/actioncreatedatasourcefromrds-get-openapi.md
+- name: AWS Machine Learning API - Create Data Source From Redshift
+  x-api-slug: actioncreatedatasourcefromredshift-get
+  description: Creates a DataSource from a database hosted on an Amazon Redshift cluster.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Analytics_AmazonMachineLearning.png
+  humanURL: https://aws.amazon.com/machine-learning/
+  baseURL: :///
+  tags: Amazon Web Services, Machine Learning, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-machine-learning/actioncreatedatasourcefromredshift-get-openapi.md
+- name: AWS Machine Learning API - Create Data Source From S3
+  x-api-slug: actioncreatedatasourcefroms3-get
+  description: Creates a DataSource object.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Analytics_AmazonMachineLearning.png
+  humanURL: https://aws.amazon.com/machine-learning/
+  baseURL: :///
+  tags: Amazon Web Services, Machine Learning, Stack Network, API Service Provider,
+    API Service Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-machine-learning/actioncreatedatasourcefroms3-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.lightsale.api.gallery.streamdata.io

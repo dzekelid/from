@@ -15,11 +15,35 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-directory-service/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS Directory Service API - Remove Tags From Resource
+  x-api-slug: actionremovetagsfromresource-get
+  description: Removes tags from a directory.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSDirectoryService.png
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: :///
+  tags: Amazon Web Services, Discovery, Authentication, Security, Stack Network, API
+    Service Provider, API Service Provider, API Provider, Profiles, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-directory-service/actionremovetagsfromresource-get-openapi.md
+- name: AWS Directory Service API - Restore From Snapshot
+  x-api-slug: actionrestorefromsnapshot-get
+  description: Restores a directory using an existing directory snapshot.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSDirectoryService.png
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: :///
+  tags: Amazon Web Services, Discovery, Authentication, Security, Stack Network, API
+    Service Provider, API Service Provider, API Provider, Profiles, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-directory-service/actionrestorefromsnapshot-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.direct.connect.api.gallery.streamdata.io

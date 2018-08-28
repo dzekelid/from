@@ -1,0 +1,304 @@
+---
+swagger: "2.0"
+x-collection-name: 3dcart
+x-complete: 0
+info:
+  title: 3dcart Get all the messages from a specific CRM
+  version: 1.0.0
+  description: Get all the messages from a specific crm.
+host: apirest.3dcart.com
+basePath: /
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /3dCartWebAPI/v1/Cart/{orderkey}/Item/{cartitemid}:
+    put:
+      summary: Updates a specific item from a specific Cart
+      description: Updates a specific item from a specific cart.
+      operationId: Carts_Update
+      x-api-path-slug: 3dcartwebapiv1cartorderkeyitemcartitemid-put
+      parameters:
+      - in: path
+        name: cartitemid
+        description: The unique index ID of an Item
+      - in: body
+        name: item
+        description: A Json or XML object containing the new cart item
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: orderkey
+        description: Order Key
+      - in: header
+        name: PrivateKey
+        description: PrivateKey
+      - in: header
+        name: SecureURL
+        description: SecureURL
+      - in: header
+        name: Token
+        description: Token
+      responses:
+        200:
+          description: OK
+      tags:
+      - S
+      - Specific
+      - Item
+      - From
+      - Specific
+      - Cart
+  /3dCartWebAPI/v1/Categories/{categoryid}/Options:
+    get:
+      summary: Get the options from a specific Category
+      description: Get the options from a specific category.
+      operationId: Category_GetAllCategoryOptions
+      x-api-path-slug: 3dcartwebapiv1categoriescategoryidoptions-get
+      parameters:
+      - in: path
+        name: categoryid
+        description: Catalog ID
+      - in: query
+        name: limit
+        description: Maximum number of items that can be returned
+      - in: query
+        name: offset
+        description: Starting point for the return data
+      - in: header
+        name: PrivateKey
+        description: PrivateKey
+      - in: header
+        name: SecureURL
+        description: SecureURL
+      - in: header
+        name: Token
+        description: Token
+      responses:
+        200:
+          description: OK
+      tags:
+      - Options
+      - From
+      - Specific
+      - Category
+    put:
+      summary: Updates a collection of options from a specific Category
+      description: Updates a collection of options from a specific category.
+      operationId: Category_Update
+      x-api-path-slug: 3dcartwebapiv1categoriescategoryidoptions-put
+      parameters:
+      - in: path
+        name: categoryid
+        description: CategoryID
+      - in: body
+        name: options
+        description: A Json or XML object containing the new options
+        schema:
+          $ref: '#/definitions/holder'
+      - in: header
+        name: PrivateKey
+        description: PrivateKey
+      - in: header
+        name: SecureURL
+        description: SecureURL
+      - in: header
+        name: Token
+        description: Token
+      responses:
+        200:
+          description: OK
+      tags:
+      - S
+      - Collection
+      - Of
+      - Options
+      - From
+      - Specific
+      - Category
+  /3dCartWebAPI/v1/Categories/{categoryid}/Options/{optionsetid}:
+    put:
+      summary: Updates specific options from a specific Category
+      description: Updates specific options from a specific category.
+      operationId: Category_Update
+      x-api-path-slug: 3dcartwebapiv1categoriescategoryidoptionsoptionsetid-put
+      parameters:
+      - in: path
+        name: categoryid
+        description: CategoryID
+      - in: body
+        name: option
+        description: A Json or XML object containing the new options
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: optionsetid
+        description: OptionSetID
+      - in: header
+        name: PrivateKey
+        description: PrivateKey
+      - in: header
+        name: SecureURL
+        description: SecureURL
+      - in: header
+        name: Token
+        description: Token
+      responses:
+        200:
+          description: OK
+      tags:
+      - S
+      - Specific
+      - Options
+      - From
+      - Specific
+      - Category
+  /3dCartWebAPI/v1/Categories/{categoryid}/Products:
+    get:
+      summary: Get all products from a specific category
+      description: Get all products from a specific category.
+      operationId: Products_GetAllProductsFromCategory
+      x-api-path-slug: 3dcartwebapiv1categoriescategoryidproducts-get
+      parameters:
+      - in: path
+        name: categoryid
+        description: ID of the category
+      - in: query
+        name: categoryspecial
+        description: Category Special Flag
+      - in: query
+        name: costfrom
+        description: Cost of a product
+      - in: query
+        name: costto
+        description: Cost of a product
+      - in: query
+        name: countonly
+        description: Count the number of rows only
+      - in: query
+        name: freeshipping
+        description: Free Shipping Flag
+      - in: query
+        name: giftcertificate
+        description: Gift Certificate Flag
+      - in: query
+        name: hide
+        description: Hide Flag
+      - in: query
+        name: homespecial
+        description: Home Special Flag
+      - in: query
+        name: lastupdateend
+        description: End Date that the product was last updated (mm/dd/yyyy hh:mm:ss)
+      - in: query
+        name: lastupdatestart
+        description: Start Date that the product was last updated (mm/dd/yyyy hh:mm:ss)
+      - in: query
+        name: limit
+        description: Maximum number of items that can be returned
+      - in: query
+        name: name
+        description: Name of the product
+      - in: query
+        name: nonsearchable
+        description: Non-Searchable Flag
+      - in: query
+        name: nontax
+        description: Non-Taxable Flag
+      - in: query
+        name: notforsale
+        description: Not For Sale Flag
+      - in: query
+        name: offset
+        description: Starting point for the return data
+      - in: query
+        name: onsale
+        description: On Sale Flag
+      - in: query
+        name: pricefrom
+        description: Price of a product
+      - in: query
+        name: priceto
+        description: Price of a product
+      - in: header
+        name: PrivateKey
+        description: PrivateKey
+      - in: query
+        name: rewarddisable
+        description: Disable Rewards Flag
+      - in: header
+        name: SecureURL
+        description: SecureURL
+      - in: query
+        name: selfship
+        description: Ships by itself Flag
+      - in: query
+        name: sku
+        description: SKU Code of the product
+      - in: query
+        name: stockfrom
+        description: Stock of a product
+      - in: query
+        name: stockto
+        description: Stock of a product
+      - in: header
+        name: Token
+        description: Token
+      responses:
+        200:
+          description: OK
+      tags:
+      - Products
+      - From
+      - Specific
+      - Category
+  /3dCartWebAPI/v1/CRM/{crmid}/message:
+    get:
+      summary: Get all the messages from a specific CRM
+      description: Get all the messages from a specific crm.
+      operationId: CRM_GetAllCRMMessages
+      x-api-path-slug: 3dcartwebapiv1crmcrmidmessage-get
+      parameters:
+      - in: path
+        name: crmid
+        description: CRM ID
+      - in: query
+        name: limit
+        description: Maximum number of items that can be returned
+      - in: query
+        name: offset
+        description: Starting point for the return data
+      - in: header
+        name: PrivateKey
+        description: PrivateKey
+      - in: header
+        name: SecureURL
+        description: SecureURL
+      - in: header
+        name: Token
+        description: Token
+      responses:
+        200:
+          description: OK
+      tags:
+      - Messages
+      - From
+      - Specific
+      - CRM
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

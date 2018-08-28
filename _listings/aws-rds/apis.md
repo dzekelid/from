@@ -11,11 +11,23 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/apis.md
 specificationVersion: "0.14"
 apis:
+- name: AWS RDS API - Remove Role From D B Cluster
+  x-api-slug: actionremoverolefromdbcluster-get
+  description: Disassociates an Identity and Access Management (IAM) role from an
+    Aurora DB cluster.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Database_AmazonRDS.png
+  humanURL: https://aws.amazon.com/rds/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, Stack, API Service Provider, API Service
+    Provider, API Provider, Databases, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/actionremoverolefromdbcluster-get-openapi.md
 - name: AWS RDS API - Remove Source Identifier From Subscription
   x-api-slug: actionremovesourceidentifierfromsubscription-get
   description: Removes a source identifier from an existing RDS event notification
@@ -30,6 +42,51 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/actionremovesourceidentifierfromsubscription-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/actionremovesourceidentifierfromsubscription-get-openapi.md
+- name: AWS RDS API - Remove Tags From Resource
+  x-api-slug: actionremovetagsfromresource-get
+  description: Removes metadata tags from an Amazon RDS resource.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Database_AmazonRDS.png
+  humanURL: https://aws.amazon.com/rds/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, Stack, API Service Provider, API Service
+    Provider, API Provider, Databases, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/actionremovetagsfromresource-get-openapi.md
+- name: AWS RDS API - Restore D B Cluster From S3
+  x-api-slug: actionrestoredbclusterfroms3-get
+  description: Creates an Amazon Aurora DB cluster from data stored in an Amazon S3
+    bucket.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Database_AmazonRDS.png
+  humanURL: https://aws.amazon.com/rds/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, Stack, API Service Provider, API Service
+    Provider, API Provider, Databases, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/actionrestoredbclusterfroms3-get-openapi.md
+- name: AWS RDS API - Restore D B Cluster From Snapshot
+  x-api-slug: actionrestoredbclusterfromsnapshot-get
+  description: Creates a new DB cluster from a DB cluster snapshot.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Database_AmazonRDS.png
+  humanURL: https://aws.amazon.com/rds/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, Stack, API Service Provider, API Service
+    Provider, API Provider, Databases, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/actionrestoredbclusterfromsnapshot-get-openapi.md
+- name: AWS RDS API - Restore D B Instance From D B Snapshot
+  x-api-slug: actionrestoredbinstancefromdbsnapshot-get
+  description: Creates a new DB instance from a DB snapshot.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Database_AmazonRDS.png
+  humanURL: https://aws.amazon.com/rds/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, Stack, API Service Provider, API Service
+    Provider, API Provider, Databases, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-rds/actionrestoredbinstancefromdbsnapshot-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.polly.api.gallery.streamdata.io

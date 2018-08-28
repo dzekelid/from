@@ -12,11 +12,50 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-identity-and-access-management/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS Identity and Access Management API - Remove Client I D From Open I D Connect
+    Provider
+  x-api-slug: actionremoveclientidfromopenidconnectprovider-get
+  description: |-
+    Removes the specified client ID (also known as audience) from the list of client IDs
+          registered for the specified IAM OpenID Connect (OIDC) provider resource object.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSIAM.png
+  humanURL: https://aws.amazon.com/iam/
+  baseURL: :///
+  tags: Amazon Web Services, Authentication, Stack Network, Security, API Service
+    Provider, API Service Provider, API Provider, Identities, Profiles, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-identity-and-access-management/actionremoveclientidfromopenidconnectprovider-get-openapi.md
+- name: AWS Identity and Access Management API - Remove Role From Instance Profile
+  x-api-slug: actionremoverolefrominstanceprofile-get
+  description: Removes the specified IAM role from the specified EC2 instance profile.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSIAM.png
+  humanURL: https://aws.amazon.com/iam/
+  baseURL: :///
+  tags: Amazon Web Services, Authentication, Stack Network, Security, API Service
+    Provider, API Service Provider, API Provider, Identities, Profiles, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-identity-and-access-management/actionremoverolefrominstanceprofile-get-openapi.md
+- name: AWS Identity and Access Management API - Remove User From Group
+  x-api-slug: actionremoveuserfromgroup-get
+  description: Removes the specified user from the specified group.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSIAM.png
+  humanURL: https://aws.amazon.com/iam/
+  baseURL: :///
+  tags: Amazon Web Services, Authentication, Stack Network, Security, API Service
+    Provider, API Service Provider, API Provider, Identities, Profiles, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-identity-and-access-management/actionremoveuserfromgroup-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.glacier.api.gallery.streamdata.io

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Xignite
 x-complete: 1
@@ -14,4 +13,23 @@ produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /GetRateFromSymbol:
+    get:
+      summary: Get Rate From Symbol
+      description: Returns the symbol for a rate.
+      operationId: postGetratefromsymbol
+      x-api-path-slug: getratefromsymbol-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Rate
+      - From
+      - Symbol

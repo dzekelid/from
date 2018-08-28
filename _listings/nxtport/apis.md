@@ -7,11 +7,24 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-
 x-kinRank: "7"
 x-alexaRank: "3933231"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/nxtport/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: T-mining Secure Container Release API (live) - Register user
+  x-api-slug: apiv1users-post
+  description: |-
+    Register information of a user. Note that the "real" (human) user should have
+    an account on the blockchain (upfront). This account is represented by an address on the chain, which is based on the public key of the user. Registering therefore means defining user **properties** like a username, which can then be used to refer to users in a more human-friendly way then by using the account addresses. User registration should be done by the user who owns an account on the chain. As a result of registration, a User contract is created on the chain, which contains the user properties, and which is owned by the user account. From then on, one can use the username to refer to a user on the web/mobile app.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28835-www-nxtport-eu.jpg
+  humanURL: https://www.nxtport.eu
+  baseURL: https://api.nxtport.eu//blockchain
+  tags: Technology, SaaS, Enterprise, Shipping, Data, General Data, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/nxtport/apiv1users-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://npr.api.gallery.streamdata.io

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Docsmore
 x-complete: 1
@@ -39,4 +38,31 @@ paths:
       tags:
       - Workflow
       - Link
----
+  /api/dmcatalogue:
+    post:
+      summary: Fetch All Documents from Your Team Catalogue
+      description: By design, the authenticated user can only view the files that
+        are either created by them or shared with them. Make sure user has at least
+        read permission to view the catalogue.
+      operationId: ApiDmcataloguePost
+      x-api-path-slug: apidmcatalogue-post
+      parameters:
+      - in: header
+        name: Accept
+      - in: header
+        name: Content-Type
+      - in: query
+        name: items
+      - in: query
+        name: page
+      responses:
+        200:
+          description: OK
+      tags:
+      - Fetch
+      - ""
+      - Documents
+      - From
+      - Your
+      - Team
+      - Catalogue

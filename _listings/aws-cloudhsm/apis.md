@@ -28,11 +28,23 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-cloudhsm/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS CloudHSM API - Remove Tags From Resource
+  x-api-slug: actionremovetagsfromresource-get
+  description: Removes one or more tags from the specified AWS CloudHSM resource.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSCloudHSM.png
+  humanURL: https://aws.amazon.com/cloudhsm/
+  baseURL: :///
+  tags: Amazon Web Services, Contracts, Regulations, Management, Encryption, Stack
+    Network, API Service Provider, API Service Provider, API Provider, Profiles, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-cloudhsm/actionremovetagsfromresource-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.cloudfront.api.gallery.streamdata.io

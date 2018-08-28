@@ -15,11 +15,35 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-storage-gateway-service/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS Storage Gateway Service API - Create Snapshot From Volume Recovery Point
+  x-api-slug: actioncreatesnapshotfromvolumerecoverypoint-get
+  description: Initiates a snapshot of a gateway from a volume recovery point.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AWSStorageGateway.png
+  humanURL: https://aws.amazon.com/storagegateway/
+  baseURL: :///
+  tags: Amazon Web Services, Gateway, Data, Stack Network, API Service Provider, API
+    Service Provider, API Provider, Databases, Deployments, Profiles, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-storage-gateway-service/actioncreatesnapshotfromvolumerecoverypoint-get-openapi.md
+- name: AWS Storage Gateway Service API - Remove Tags From Resource
+  x-api-slug: actionremovetagsfromresource-get
+  description: Removes one or more tags from the specified resource.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AWSStorageGateway.png
+  humanURL: https://aws.amazon.com/storagegateway/
+  baseURL: :///
+  tags: Amazon Web Services, Gateway, Data, Stack Network, API Service Provider, API
+    Service Provider, API Provider, Databases, Deployments, Profiles, Relative Data,
+    Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/aws-storage-gateway-service/actionremovetagsfromresource-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.step.functions.api.gallery.streamdata.io

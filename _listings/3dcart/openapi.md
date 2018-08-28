@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: 3dcart
 x-complete: 1
@@ -2043,4 +2042,3 @@ paths:
       - From
       - Specific
       - RMA
----

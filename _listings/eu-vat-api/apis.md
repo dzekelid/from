@@ -14,11 +14,31 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: From
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/eu-vat-api/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: VAT API - Retrieve a countries VAT rates from an IP address
+  x-api-slug: ipcheck-get
+  description: Retrieve a countries vat rates from an ip address.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/vatapi-logo.png
+  humanURL: http://vatapi.com
+  baseURL: https://vatapi.com//v1
+  tags: VAT, EU, Taxes, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/eu-vat-api/ipcheck-get-openapi.md
+- name: VAT API - Convert a price to or from VAT price.
+  x-api-slug: vatprice-get
+  description: Convert a price to or from vat price..
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/vatapi-logo.png
+  humanURL: http://vatapi.com
+  baseURL: https://vatapi.com//v1
+  tags: VAT, EU, Taxes, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/from/master/_listings/eu-vat-api/vatprice-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://eu.bon.utis.api.gallery.streamdata.io
